@@ -1,12 +1,12 @@
 const messages = {
   krithika:
-    "Krithika, your kindness and strength inspire everyone around you. Keep shining and Happy Women's Day!",
+    "Still in shock that it's been 10 years since we met!  You are one of the best woman I met.. You have always been strong and beautiful you can face everything and I'm with you in thing..May let nothing stop you stay strong stay wow 🤩🤩",
   praneetha:
-    'Praneetha, your determination and positivity make you unstoppable. The world is brighter because of you.',
-  harshini: 'Harshini, your smile spreads happiness wherever you go. Never stop being amazing.',
-  anu: 'Anu, your creativity and courage make the world a better place. Believe in yourself always.',
+    'One of the real independent strong woman I met,Be it sports be in life be it anything you always are the best Always be like this and never let anyone stop you from being the amazing person you are.🌸',
+  harshini: 'Ive seen you go through so much and you have always come out stronger. You are a true inspiration to everyone around you. Keep shining and never let anyone dim your light. stay strong and keep being the amazing person you are.💪🌸',
+  anu: 'The always calm friendly and that beautiful character of yours is all that make you a beautiful woman,keep this going everything you face  your strength a very happy womans day💞💞.',
   durga:
-    'Durga, your strength truly lives up to your name. You inspire everyone around you every day.'
+    'I know you had to face so much and yet you never gave up on yourself and that is wwhat makes you the best keep it up and grow stronger dont forget I always will be there for you. Never giveup on yourself💪🌸'
 };
 
 const songs = {
@@ -89,14 +89,8 @@ function playSong(path) {
   bgMusic.currentTime = 0;
   bgMusic.src = path;
   bgMusic.muted = false;
-  bgMusic
-    .play()
-    .then(() => {
-      audioToggle.textContent = 'Mute Music';
-    })
-    .catch(() => {
-      audioToggle.textContent = 'Tap to Play Music';
-    });
+  bgMusic.play();
+  audioToggle.textContent = 'Mute Music';
 }
 
 function revealMessage() {
@@ -128,11 +122,6 @@ audioToggle.addEventListener('click', () => {
     return;
   }
 
-  if (bgMusic.paused) {
-    bgMusic.play();
-    audioToggle.textContent = 'Mute Music';
-  } else {
-    bgMusic.pause();
-    audioToggle.textContent = 'Play Music';
-  }
+  bgMusic.muted = !bgMusic.muted;
+  audioToggle.textContent = bgMusic.muted ? 'Unmute Music' : 'Mute Music';
 });
