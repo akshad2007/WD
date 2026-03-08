@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Women's Day 🌸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-glow"></div>
+    <div id="floatingLayer" class="floating-layer" aria-hidden="true"></div>
+
+    <main class="container">
+      <section class="welcome-card" aria-labelledby="title">
+        <h1 id="title">Happy Women's Day 🌸</h1>
+        <p class="subtitle">Enter your name to reveal your personalized celebration message.</p>
+
+        <div class="input-wrap">
+          <input
+            id="nameInput"
+            type="text"
+            autocomplete="off"
+            placeholder="Type your name"
+            aria-label="Enter your name"
+          />
+          <button id="revealBtn" type="button">Reveal My Message</button>
+        </div>
+      </section>
+
+      <section id="messageCard" class="message-card hidden" aria-live="polite">
+        <h2>✨ Your Women's Day Message ✨</h2>
+        <p id="messageText"></p>
+        <button id="audioToggle" class="audio-btn" type="button">Mute Music</button>
+      </section>
+    </main>
+
+    <audio id="bgMusic" hidden></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
