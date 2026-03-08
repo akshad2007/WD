@@ -6,7 +6,9 @@ const messages = {
   harshini: 'Ive seen you go through so much and you have always come out stronger. You are a true inspiration to everyone around you. Keep shining and never let anyone dim your light. stay strong and keep being the amazing person you are.💪🌸',
   anu: 'The always calm friendly and that beautiful character of yours is all that make you a beautiful woman,keep this going everything you face  your strength a very happy womans day💞💞.',
   durga:
-    'I know you had to face so much and yet you never gave up on yourself and that is wwhat makes you the best keep it up and grow stronger dont forget I always will be there for you. Never giveup on yourself💪🌸'
+    'I know you had to face so much and yet you never gave up on yourself and that is wwhat makes you the best keep it up and grow stronger dont forget I always will be there for you. Never giveup on yourself💪🌸',
+  mahathi:
+   'We might not be talking like before but I want you to know that no matter how many woman I met you are one of those who made atleast a part of myself happy...No matter what I will always wish you the best and will be there for you 💞💞'
 };
 
 const songs = {
@@ -14,7 +16,8 @@ const songs = {
   praneetha: 'songs/symbolism.mp3',
   harshini: 'songs/invincible.mp3',
   anu: 'songs/sky-high.mp3',
-  durga: 'songs/on-and-on.mp3'
+  durga: 'songs/on-and-on.mp3',
+  mahathi: 'songs/Ak.mp3'
 };
 
 const fallbackMessage = "Every woman is special. Happy Women's Day!";
